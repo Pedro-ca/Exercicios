@@ -1,0 +1,8 @@
+nota_1 = float(input('digite sua nota em matematica '))
+nota_2 = float(input('digite sua nota em portugues'))
+media = (nota_1 + nota_2) / 2
+print(f'sua media foi {media}')
+if media >= 7:
+  print('Aprovado')
+else:
+  print('reprovado')
