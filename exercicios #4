@@ -1,0 +1,10 @@
+print('qual sexo? M para masculino F para feminino e I para indefinido')
+sexo = input('digite seu sexo ')
+if sexo == 'm'.upper():
+  print('seu sexo é masculino')
+elif sexo == 'f'.upper():
+  print('seu sexo é feminino')
+elif sexo == 'i'.upper():
+  print('sexo indefinido')
+else:
+  print('sexo invalido')
