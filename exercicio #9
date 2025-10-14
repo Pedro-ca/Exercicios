@@ -1,0 +1,4 @@
+maximo = float(input(' digite um numero '))
+for _ in range(4):
+  maximo = max(maximo, float(input('digite um numero: ')))
+  print(f'Numéro maximo agora é: {maximo}')
