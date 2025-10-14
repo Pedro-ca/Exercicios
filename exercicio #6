@@ -1,0 +1,16 @@
+def separar_centenas_dezenas_unidades(numero):
+    if not 0 <= numero <= 999:
+        return "Número fora do intervalo (0 a 999)."
+
+    centenas = numero // 100
+    dezenas = (numero % 100) // 10
+    unidades = numero % 10
+
+    return centenas, dezenas, unidades
+
+numero = int(input("Digite um número de 0 a 999: "))
+c, d, u = separar_centenas_dezenas_unidades(numero)
+
+print(f"Centenas: {c}")
+print(f"Dezenas: {d}")
+print(f"Unidades: {u}")
