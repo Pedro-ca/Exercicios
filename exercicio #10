@@ -1,0 +1,5 @@
+lista = []
+for i in range(5):
+  numero = float(input('digite 5 numeros'))
+  lista.append(numero)
+print(lista)
