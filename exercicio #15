@@ -1,0 +1,7 @@
+from random import shuffle
+
+usuarios = list(range(10))
+shuffle(usuarios)
+
+print(usuarios)
+usuarios.sort(reverse=True)
