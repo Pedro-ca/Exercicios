@@ -1,0 +1,20 @@
+s1= input('digite uma string ')
+s2= input('digite outra string ')
+
+tamanho1 = len(s1)
+tamanho2 = len(s2)
+
+print(f'"{s1}": {tamanho1} caracteres')
+print(f'"{s2}": {tamanho2} caracteres')
+
+comp_conteudo = 'diferentes'
+comp_tamanho = 'diferentes'
+
+if s1 == s2:
+  comp_conteudo = 'iguais'
+  comp_tamanho = 'iguais'
+if tamanho1 == tamanho2:
+  comp_tamanho = 'iguais'
+
+print(f'as duas strings são de tamanhos {comp_tamanho} ')
+print(f'as duas strings são de conteudos {comp_conteudo} ')
