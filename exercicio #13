@@ -1,0 +1,21 @@
+class BolaPerfeita:
+  def __init__(self):
+    self.cor = 'verde'
+    self.circunferencia = '5'
+    self.material = 'papel'
+
+  def mostra_cor(self):
+    return id(self.cor)
+
+  def trocar_cor(self, cor):
+    self.cor = cor
+
+bola_1 = BolaPerfeita()
+bola_2 = BolaPerfeita()
+
+bola_2.trocar_cor('amarelo')
+
+print(type(bola_1))
+print(type(bola_2))
+print(id(bola_1,), bola_1.mostra_cor())
+print(bola_1.cor, bola_2.cor)
