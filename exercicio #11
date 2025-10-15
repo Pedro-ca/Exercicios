@@ -1,0 +1,12 @@
+def triangulo(n: int):
+  for i in range(1, n + 1):
+    for _ in range(i):
+      print(i, end = '  ')
+    print('')
+
+print('triangulo com 1 digito')
+triangulo(1)
+print('triangulo com 2 digito')
+triangulo(2)
+print('triangulo com 3 digito')
+triangulo(3)
