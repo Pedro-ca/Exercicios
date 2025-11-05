@@ -1,0 +1,37 @@
+def valor_pagamento(valor_prestacao, dias_atraso):
+    """
+    Calcula o valor a ser pago por uma prestação.
+    - Se não houver atraso, retorna o valor normal.
+    - Se houver atraso, aplica multa de 3% + juros de 0,1% por dia.
+    """
+    if dias_atraso == 0:
+        return valor_prestacao
+    else:
+        multa = valor_prestacao * 0.03  
+        juros = valor_prestacao * 0.001 * dias_atraso 
+        return valor_prestacao + multa + juros
+
+
+total_pago = 0
+quantidade_prestacoes = 0
+
+while True:
+    valor = float(input("Digite o valor da prestação (ou 0 para encerrar): "))
+
+    if valor == 0:
+        break 
+
+    dias = int(input("Digite o número de dias em atraso: "))
+
+
+    valor_final = valor_pagamento(valor, dias)
+    print(f"Valor a ser pago: R$ {valor_final:.2f}\n")
+
+    total_pago += valor_final
+    quantidade_prestacoes += 1
+
+
+
+print("\n=== RELATÓRIO DO DIA ===")
+print(f"Quantidade de prestações pagas: {quantidade_prestacoes}")
+print(f"Valor total pago: R$ {total_pago:.2f}")
